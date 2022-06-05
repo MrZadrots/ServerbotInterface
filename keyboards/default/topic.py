@@ -7,9 +7,6 @@ topicMenu.add(b1)
 b1 = KeyboardButton("Календарь приема")
 topicMenu.add(b1)
 
-b1 = KeyboardButton("Календарь приема")
-topicMenu.add(b1)
-
 b1 = KeyboardButton("Особые категории")
 topicMenu.add(b1)
 
