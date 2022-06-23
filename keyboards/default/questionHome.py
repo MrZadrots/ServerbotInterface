@@ -4,10 +4,7 @@ question1Home = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("Кто имеет право получить комнату в общежитии")
 question1Home.add(b1)
 
-b1 = KeyboardButton("Какие условия проживания в общежитии (правила, права и обязанности)")
-question1Home.add(b1)
-
-b1 = KeyboardButton("Какие нужны документы для заселения")
+b1 = KeyboardButton("Какие условия проживания в общежитии")
 question1Home.add(b1)
 
 b1 = KeyboardButton("Какие нужны документы для заселения")

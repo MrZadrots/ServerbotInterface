@@ -26,7 +26,7 @@ from keyboards.default.questionHome import question1Home
 
 
 from utils.questionsList import questions
-from utils.requests import req
+from utils.requests import req,getToken
 
 
 @dp.message_handler()
@@ -65,6 +65,8 @@ async def bot_message(message: types.Message):
         await message.answer(text=message.text, reply_markup=quesction3Cal)
     if message.text == "Заселение в общежитие":
         await message.answer(text=message.text, reply_markup=quesction4Cal)
+
+
     #Subtopic 3
     if message.text == "Льготы":
          await message.answer(text=message.text, reply_markup=quesction1Cat)
@@ -79,7 +81,7 @@ async def bot_message(message: types.Message):
         await message.answer(text=message.text, reply_markup=question1Dir)
 
     #Subtopic 5
-    if message.text == "По EГЭ":
+    if message.text == "По ЕГЭ":
         await message.answer(text=message.text, reply_markup=question1Exam)
     if message.text == 'Вступительные испытания':
         await message.answer(text=message.text, reply_markup=question2Exam)
@@ -91,7 +93,17 @@ async def bot_message(message: types.Message):
     if message.text in questions:
         logging.info(message.text)
         que = message.text + '?'
-        answer = req(que)
-        logging.info(answer[0]['answer'])
+
+        token = getToken(message.from_user.id)
+        logging.info(token[0]['msg'])
+        if str(token[0]['msg']) == "Такого пользователя нет":
+            answer = req(que,'null')
+            logging.info(answer[0]['answer'])
+        else:
+            logging.info("Зашли")
+            answer = req(que,token[0]['msg'])
+            logging.info(answer[0]['answer'])
+
+
         await message.answer(text=answer[0]['answer'])
         #await message.answer(text="Я получил вопрос: " + que)

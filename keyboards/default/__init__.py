@@ -5,3 +5,4 @@ from . import questionsCat
 from . import questionCal
 from . import questionDir
 from . import questionHome
+from . import questionExams
