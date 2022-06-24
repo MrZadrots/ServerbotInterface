@@ -27,8 +27,14 @@ def getToken(tgId):
     body = {'tgId': tgId}
     header = {'Accept': 'application/json','Content-Type': 'application/json'}
     r = requests.get(url+"/getUser", json=body, headers=header)
+
+    tmp = r.json()
+
+    logging.info(tmp)
     if str(r.status_code) == "401":
         return {"msg": "Ошибка"}
+    if str(r.status_code) == '201':
+        return {'msg': "Такого пользователя нет"}
     else:
-        return  r.json()
+        return {'msg': tmp[0]['msg']}
 

@@ -95,13 +95,13 @@ async def bot_message(message: types.Message):
         que = message.text + '?'
 
         token = getToken(message.from_user.id)
-        logging.info(token[0]['msg'])
-        if str(token[0]['msg']) == "Такого пользователя нет":
+        logging.info(str(token))
+        if str(token['msg']) == "Такого пользователя нет" or str(token['msg']) =="Ошибка":
             answer = req(que,'null')
             logging.info(answer[0]['answer'])
         else:
             logging.info("Зашли")
-            answer = req(que,token[0]['msg'])
+            answer = req(que, token['msg'])
             logging.info(answer[0]['answer'])
 
 
