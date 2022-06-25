@@ -14,17 +14,17 @@ question1Exam.add(b1)
 b1 = KeyboardButton("Где можно сдать ЕГЭ")
 question1Exam.add(b1)
 
-b1 = KeyboardButton("Кто имеет права сдавать ЕГЭ")
-question1Exam.add(b1)
-
 b1 = KeyboardButton("Нужно ли предоставлять свидетельство с результатами ЕГЭ")
 question1Exam.add(b1)
 
 b1 = KeyboardButton("Если я сдал(а) ЕГЭ, нужно ли мне сдавать ВИ")
 question1Exam.add(b1)
 
+b1 = KeyboardButton("Назад")
+question1Exam.add(b1)
+
 question2Exam = ReplyKeyboardMarkup(resize_keyboard=True)
-b1 = KeyboardButton("Кто имеет право сдавит ВИ")
+b1 = KeyboardButton("Кто имеет право сдавать ВИ")
 question2Exam.add(b1)
 
 b1 = KeyboardButton("Как записаться на сдачу ВИ")
@@ -63,6 +63,9 @@ question2Exam.add(b1)
 b1 = KeyboardButton("Могу ли я получить комнату в общежитии на время сдачи ВИ")
 question2Exam.add(b1)
 
+b1 = KeyboardButton("Назад")
+question2Exam.add(b1)
+
 question3Exam = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("Какие минимальные баллы необходимо набрать для участия в конкурсе на поступление")
 question3Exam.add(b1)
@@ -70,5 +73,8 @@ question3Exam.add(b1)
 b1 = KeyboardButton("Какие минимальные баллы для обучения по контракту")
 question3Exam.add(b1)
 
-b1 = KeyboardButton("*Подобрать направление, с учетом сданных экзаменов")
+b1 = KeyboardButton("Подобрать направление, с учетом сданных экзаменов")
+question3Exam.add(b1)
+
+b1 = KeyboardButton("Назад")
 question3Exam.add(b1)

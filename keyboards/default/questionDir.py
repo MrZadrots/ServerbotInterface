@@ -31,3 +31,6 @@ question1Dir.add(b1)
 b1 = KeyboardButton("Подобрать направление, с учетом сданных экзаменов")
 question1Dir.add(b1)
 
+b1 = KeyboardButton("Назад")
+question1Dir.add(b1)
+

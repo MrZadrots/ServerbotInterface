@@ -6,7 +6,7 @@ from data import config
 
 
 loop = asyncio.get_event_loop()
-bot = Bot(token=config.BOT_TOKEN, parse_mode=types.ParseMode.HTML)
+bot = Bot(token='5317656053:AAFTDMFd0ytm46eRWbDxtswCJusr5jW1xZw', parse_mode=types.ParseMode.HTML)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 

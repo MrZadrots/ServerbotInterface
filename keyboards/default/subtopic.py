@@ -11,7 +11,10 @@ subtopicDoc.add(b1)
 b1 = KeyboardButton("Заключить договор на обучение по контракту")
 subtopicDoc.add(b1)
 
-b1 = KeyboardButton("Как подать согласие")
+b1 = KeyboardButton("Согласие")
+subtopicDoc.add(b1)
+
+b1 = KeyboardButton("Назад")
 subtopicDoc.add(b1)
 
 subtopicCalendar = ReplyKeyboardMarkup(resize_keyboard=True)
@@ -25,6 +28,9 @@ b1 = KeyboardButton("Приказы о зачислении")
 subtopicCalendar.add(b1)
 
 b1 = KeyboardButton("Заселение в общежитие")
+subtopicCalendar.add(b1)
+
+b1 = KeyboardButton("Назад")
 subtopicCalendar.add(b1)
 
 
@@ -41,6 +47,9 @@ subtopicCategory.add(b1)
 b1 = KeyboardButton("Индивидуальные достижения")
 subtopicCategory.add(b1)
 
+b1 = KeyboardButton("Назад")
+subtopicCategory.add(b1)
+
 subtopicExams = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("По ЕГЭ")
 subtopicExams.add(b1)
@@ -49,6 +58,9 @@ b1 = KeyboardButton("Вступительные испытания")
 subtopicExams.add(b1)
 
 b1 = KeyboardButton("Минимальные баллы")
+subtopicExams.add(b1)
+
+b1 = KeyboardButton("Назад")
 subtopicExams.add(b1)
 
 

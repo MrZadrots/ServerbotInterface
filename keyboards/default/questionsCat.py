@@ -28,6 +28,9 @@ quesction1Cat.add(b1)
 b1= KeyboardButton("На сколько направлений действует льготное право поступление")
 quesction1Cat.add(b1)
 
+b1= KeyboardButton("Назад")
+quesction1Cat.add(b1)
+
 
 quesction2Cat = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("Кто может поступать без вступительных испытаний")
@@ -51,8 +54,11 @@ quesction2Cat.add(b1)
 b1 = KeyboardButton("На сколько направлений действует право поступление БВИ")
 quesction2Cat.add(b1)
 
+b1 = KeyboardButton("Назад")
+quesction2Cat.add(b1)
+
 quesction3Cat = ReplyKeyboardMarkup(resize_keyboard=True)
-b1 = KeyboardButton("Что такое целевое обучение?")
+b1 = KeyboardButton("Что такое целевое обучение")
 quesction3Cat.add(b1)
 
 b1 = KeyboardButton("Кто заключает договор на целевое обучение")
@@ -73,6 +79,8 @@ quesction3Cat.add(b1)
 b1 = KeyboardButton("Когда издается приказ о зачислении на целевое обучение")
 quesction3Cat.add(b1)
 
+b1 = KeyboardButton("Назад")
+quesction3Cat.add(b1)
 
 quesction4Cat = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("Какие индивидуальные достижения засчитываются при поступлении")
@@ -88,4 +96,7 @@ b1 = KeyboardButton("Как предоставить документы, под�
 quesction4Cat.add(b1)
 
 b1 = KeyboardButton("За какие года действуют индивидуальные достижения")
+quesction4Cat.add(b1)
+
+b1 = KeyboardButton("Назад")
 quesction4Cat.add(b1)

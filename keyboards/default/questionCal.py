@@ -22,6 +22,9 @@ quesction1Cal.add(b1)
 b1 = KeyboardButton("Когда публикуются приказы о зачислении")
 quesction1Cal.add(b1)
 
+b1 = KeyboardButton("Назад")
+quesction1Cal.add(b1)
+
 quesction2Cal = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("Когда проводятся вступительные испытания по материалам ВУЗа")
 quesction2Cal.add(b1)
@@ -35,8 +38,10 @@ quesction2Cal.add(b1)
 b1 = KeyboardButton("Когда проводится апелляция")
 quesction2Cal.add(b1)
 
+b1 = KeyboardButton("Назад")
+quesction2Cal.add(b1)
 
-quesction3Cal =ReplyKeyboardMarkup(resize_keyboard=True)
+quesction3Cal = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("Когда публикуются приказы о зачислении на бюджетные места")
 quesction3Cal.add(b1)
 
@@ -44,6 +49,9 @@ b1 = KeyboardButton("Когда публикуются приказы о зач�
 quesction3Cal.add(b1)
 
 b1 = KeyboardButton("Когда публикуются приказы о зачислении на места в пределах особой квоты")
+quesction3Cal.add(b1)
+
+b1 = KeyboardButton("Назад")
 quesction3Cal.add(b1)
 
 quesction4Cal = ReplyKeyboardMarkup(resize_keyboard=True)
@@ -54,4 +62,7 @@ b1 = KeyboardButton("Когда будет заселение в общежит�
 quesction4Cal.add(b1)
 
 b1 = KeyboardButton("Могу ли я заселиться раньше/позже")
+quesction4Cal.add(b1)
+
+b1 = KeyboardButton("Назад")
 quesction4Cal.add(b1)

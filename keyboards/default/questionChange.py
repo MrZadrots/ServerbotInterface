@@ -24,3 +24,6 @@ question1C.add(b1)
 
 b1 = KeyboardButton("Можно ли пойти на контракт, если не поступил на бюджет")
 question1C.add(b1)
+
+b1 = KeyboardButton("Назад")
+question1C.add(b1)

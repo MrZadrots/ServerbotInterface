@@ -19,6 +19,9 @@ subtopic1Que.add(b1)
 b1 = KeyboardButton("Как изменить поданное заявление")
 subtopic1Que.add(b1)
 
+b1 = KeyboardButton("Назад")
+subtopic1Que.add(b1)
+
 subtopic2Que = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("Какие документы нужны для поступления по общему конкурсу")
 subtopic2Que.add(b1)
@@ -38,6 +41,9 @@ subtopic2Que.add(b1)
 b1 = KeyboardButton("Нужны ли оригиналы")
 subtopic2Que.add(b1)
 
+b1 = KeyboardButton("Назад")
+subtopic2Que.add(b1)
+
 subtopic3Que = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 =KeyboardButton("Что такое обучение по контракту")
 subtopic3Que.add(b1)
@@ -54,6 +60,8 @@ subtopic3Que.add(b1)
 b1 =KeyboardButton("Как можно оплатить (мат. Капитал, оплата онлайн, образовательный кредит)")
 subtopic3Que.add(b1)
 
+b1 =KeyboardButton("Назад")
+subtopic3Que.add(b1)
 
 subtopic4Que = ReplyKeyboardMarkup(resize_keyboard=True)
 b1 = KeyboardButton("Где можно взять шаблон согласия")
@@ -69,4 +77,7 @@ b1 = KeyboardButton("Можно ли менять поданное соглас�
 subtopic4Que.add(b1)
 
 b1 = KeyboardButton("Как подать согласие")
+subtopic4Que.add(b1)
+
+b1 = KeyboardButton("Назад")
 subtopic4Que.add(b1)
